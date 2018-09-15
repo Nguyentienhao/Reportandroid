@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HKTShop</string>
+    <string name="button_search">Tìm kiếm sản phẩm</string>
+    <string name="todo">TODO</string>
+    <string name="image_capture">image capture</string>
+    <string name="title_cart">Giỏ hàng</string>
+    <string name="title_more">Nhiều lựa chọn</string>
+    <string name="title_sign_in">Đăng nhập</string>
+    <string name="title_sign_out">Đăng xuất</string>
+    <string name="title_notification">Thông báo</string>
+    <string name="title_quick_list">Danh sách mong muốn</string>
+    <string name="title_my_order">Đơn đặt hàng</string>
+    <string name="title_setting">Cài đặt</string>
+    <string name="title_policy">Chính sách</string>
+    <string name="title_help">Giúp đỡ</string>
+    <string name="title_search">Tìm kiếm</string>
+    <string name="title_live_stream">Live stream</string>
+    <string name="img_icon">icon trang chủ</string>
+    <string name="title_info_account">Tài khoản</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="description_store">Gian hàng</string>
+    <string name="description_number_cart">Số lượng mua hàng</string>
+    <string name="description_image_cart">Đây là hình ảnh giỏ hàng</string>
+    <string name="description_cate">Danh mục các sản phẩm</string>
+</resources>

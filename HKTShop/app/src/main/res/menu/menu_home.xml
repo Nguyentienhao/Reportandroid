@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/custom_ic_search"
+        android:title="@string/title_search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itCart"
+        android:title="@string/title_cart"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_item_cart"
+        android:icon="@drawable/ic_shop_cart_24dp"
+        />
+    <item
+        android:id="@+id/itMenuOption"
+        android:title="@string/title_more"
+        android:icon="@drawable/ic_menu_vert_24"
+        app:showAsAction="always"
+        >
+
+        <menu>
+            <item
+                android:id="@+id/itSignIn"
+                android:icon="@drawable/ic_sign_in"
+                android:title="@string/title_sign_in"
+                />
+
+            <item
+                android:id="@+id/itPolicy"
+                android:title="@string/title_policy"
+                android:icon="@drawable/ic_policy_24dp"
+                />
+            <item
+                android:id="@+id/itHelp"
+                android:title="@string/title_help"
+                android:icon="@drawable/ic_help_24dp"
+                />
+            <item
+                android:id="@+id/itSignOut"
+                android:title="@string/title_sign_out"
+                android:icon="@drawable/ic_sign_out"
+                />
+        </menu>
+    </item>
+</menu>
