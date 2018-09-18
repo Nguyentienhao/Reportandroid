@@ -20,16 +20,12 @@
 
 
     <FrameLayout
+        android:id="@+id/fragmentContainerStore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         >
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycleViewStore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-        </android.support.v7.widget.RecyclerView>
+
     </FrameLayout>
 
     <android.support.design.widget.AppBarLayout
@@ -73,19 +69,19 @@
         />
 
     <FrameLayout
-        android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="155dp"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewCate"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="155dp"
         >
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycleViewCate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-        </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.RecyclerView>
 
-    </FrameLayout>
+</FrameLayout>
 
 
     <android.support.design.widget.BottomNavigationView

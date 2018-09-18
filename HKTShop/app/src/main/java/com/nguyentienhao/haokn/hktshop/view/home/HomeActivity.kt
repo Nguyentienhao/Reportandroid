@@ -12,6 +12,7 @@ import com.nguyentienhao.haokn.hktshop.adapter.StoreRecycleViewAdapter
 import com.nguyentienhao.haokn.hktshop.contract.stores.StoreContract
 import com.nguyentienhao.haokn.hktshop.model.store.Stores
 import com.nguyentienhao.haokn.hktshop.presenter.stores.StorePresenter
+import com.nguyentienhao.haokn.hktshop.view.store.FragmentCateStore
 import kotlinx.android.synthetic.main.activity_home.*
 
 
@@ -19,12 +20,21 @@ class HomeActivity : AppCompatActivity(), StoreContract.View {
     private var listStores: ArrayList<Stores>? = null
     private var bottomNavigationView: BottomNavigationView? = null
 
+    private var fragmentManager = supportFragmentManager
+    private var fragmentTransaction = fragmentManager.beginTransaction()
+    private var fragmentCateStore = FragmentCateStore()
+
 
     override var presenter: StoreContract.Presenter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        /*
+        * add fragment category store to HomeActivity
+        * */
+
 
         /*
         * dựt dây tới presenter
@@ -52,6 +62,8 @@ class HomeActivity : AppCompatActivity(), StoreContract.View {
         * */
         initStoresRecyclerView()
 
+        fragmentTransaction.add(R.id.fragmentContainerStore, fragmentCateStore)
+        fragmentTransaction.commit()
         /*
         * create event on every item of bottom navigation.
         * */

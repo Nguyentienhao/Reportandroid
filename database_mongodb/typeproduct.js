@@ -15,5 +15,15 @@ db.TypeProduct.insertMany([
         "TypeProdcutID": 3,
         "NameTypeProdct": "Quạt gió và quạt trần",
         "TypeParentId": 1
-    }
+    },
+    {
+        "TypeProdcutID": 4,
+        "NameTypeProdct": "Sách giáo khoa",
+        "TypeParentId": 1
+    },
+    {
+        "TypeProdcutID": 5,
+        "NameTypeProdct": "Tap",
+        "TypeParentId": 1
+    },
 ]);
