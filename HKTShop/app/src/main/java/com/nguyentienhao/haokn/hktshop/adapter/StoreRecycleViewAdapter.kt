@@ -32,7 +32,6 @@ class StoreRecycleViewAdapter(
 
     }
 
-
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
         val v: View = LayoutInflater.from(p0.context).inflate(R.layout.custom_categories_stores, p0, false)
         return ViewHolder(v)

@@ -37,4 +37,8 @@
         parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textSize">16sp</item>
     </style>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="useStrike" format="boolean" />
+    </declare-styleable>
 </resources>

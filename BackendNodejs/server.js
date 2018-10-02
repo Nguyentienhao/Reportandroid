@@ -26,7 +26,6 @@ const dbName = 'ModernAgriculture';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-
 /** 
  * + install data with utf-8
  * + connect database with mongodb name is ModernAgriculture
@@ -35,8 +34,7 @@ app.use(bodyParser.urlencoded({extended: true}));
  * + close connect
 */
 app.get('*/typeproduct', (_req, res) => {
- // res.writeHead(200, {  'Content-Type': 'text/json; charset=utf-8' });
-
+    // res.writeHead(200, {  'Content-Type': 'text/json; charset=utf-8' });
     mongoClient.connect(url, function(err, db) {
         if (err) {
             throw err;
