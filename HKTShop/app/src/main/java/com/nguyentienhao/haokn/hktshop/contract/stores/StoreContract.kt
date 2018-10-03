@@ -16,6 +16,6 @@ interface StoreContract {
         /**
          * add data for stores include name store and image store.
          * */
-        fun addDataInRecycler(listStores: ArrayList<Stores>)
+        fun addDataInRecycler(): ArrayList<Stores>
     }
 }

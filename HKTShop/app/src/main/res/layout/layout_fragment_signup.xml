@@ -2,39 +2,101 @@
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tip_sign_up" />
+            android:text="@string/tip_sign_up"
+            android:textStyle="bold"
+            />
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_edtNameSignUp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
 
             <EditText
+                android:id="@+id/edtNameSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_sign_in" />
+                android:hint="@string/name_sign_in"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_edtEmailSignUp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/edtEmailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_sign_in"
+                android:inputType="textEmailAddress" />
 
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_edtPasswordSignUp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
 
-            <EditText
+            >
+
+            <com.nguyentienhao.haokn.hktshop.customView.PasswordEditText
+                android:id="@+id/edtPasswordSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/title_sign_out" />
-
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                app:useStrike="true" />
         </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_edtConfirmSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.nguyentienhao.haokn.hktshop.customView.PasswordEditText
+                android:id="@+id/edtConfirmSignUp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:inputType="textEmailAddress"
+                app:useStrike="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tip_enter_password" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorGoogle"
+            android:text="@string/button_sign_up"
+            />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

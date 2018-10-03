@@ -29,4 +29,12 @@
     <string name="button_sign_in_facebook">Đăng nhập facebook</string>
     <string name="button_sign_in_google">Đăng nhập Google</string>
     <string name="tip_sign_up">Bạn cần điền đầy đủ thông tin</string>
+    <string name="name_sign_in">Nhập vào tên</string>
+    <string name="email_sign_in">Nhập vào email</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="tip_enter_password">Mật khẩu phải bao gồm 6 ký tự và một chữ hoa</string>
+    <string name="button_sign_up">Đăng ký</string>
+    <string name="button_facebook">FaceBook</string>
+    <string name="button_google">Google</string>
+    <string name="create_account">Tạo tài khoản khác</string>
 </resources>
