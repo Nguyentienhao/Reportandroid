@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/product_computer"
+            android:background="?attr/colorPrimaryDark"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvNameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Máy tính xách tay"
+            />
+        <TextView
+            android:id="@+id/tvIDProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: 93939393993"
+            />
+        <TextView
+            android:id="@+id/tvPriceProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200.000"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

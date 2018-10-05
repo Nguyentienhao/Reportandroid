@@ -17,6 +17,7 @@
     <string name="title_live_stream">Live stream</string>
     <string name="img_icon">icon trang chủ</string>
     <string name="title_info_account">Tài khoản</string>
+    <string name="title_category">Danh mục</string>
     <string name="title_home">Trang chủ</string>
     <string name="description_store">Gian hàng</string>
     <string name="description_number_cart">Số lượng mua hàng</string>
@@ -37,4 +38,5 @@
     <string name="button_facebook">FaceBook</string>
     <string name="button_google">Google</string>
     <string name="create_account">Tạo tài khoản khác</string>
+    <string name="list_product">Danh sách các sản phẩm</string>
 </resources>

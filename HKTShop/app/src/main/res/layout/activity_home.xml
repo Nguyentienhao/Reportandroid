@@ -65,8 +65,7 @@
         android:layout_marginTop="135dp"
         android:background="@color/colorGray"
         android:paddingTop="2dp"
-        android:text="@string/description_cate"
-        />
+        android:text="@string/description_cate" />
 
     <FrameLayout
     android:layout_width="match_parent"
@@ -81,9 +80,14 @@
         android:layout_height="wrap_content"
         >
     </android.support.v7.widget.RecyclerView>
-
+     <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="100dp"
+          android:background="@color/colorGray"
+          android:paddingTop="2dp"
+          android:text="@string/list_product" />
 </FrameLayout>
-
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_navigation"

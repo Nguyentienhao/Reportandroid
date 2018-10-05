@@ -6,7 +6,6 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.Menu
 import android.widget.Toast
 import com.nguyentienhao.haokn.hktshop.R
@@ -57,9 +56,6 @@ class HomeActivity : AppCompatActivity(), StoreContract.View {
         * call function from presenter
         * */
         listStores = presenter?.addDataInRecycler()
-
-        Log.d("listStores", ("$listStores tie nao"))
-        Log.d("Hao", "Nguyen tien hao")
 
         /*
         * inflater RecyclerView and add adapter for store

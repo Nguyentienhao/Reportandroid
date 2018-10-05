@@ -11,17 +11,17 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/action_category"
+        android:enabled="true"
+        android:icon="@drawable/ic_category_24"
+        android:title="@string/title_category"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_favorites"
         android:enabled="true"
         android:icon="@drawable/ic_camera_live_stream"
         android:title="@string/title_live_stream"
-        app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/action3"
-        android:enabled="true"
-        android:icon="@drawable/ic_menu_notification"
-        android:title="@string/title_notification"
         app:showAsAction="ifRoom" />
 
 
