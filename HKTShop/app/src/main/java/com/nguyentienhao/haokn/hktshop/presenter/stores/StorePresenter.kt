@@ -7,7 +7,7 @@ class StorePresenter: StoreContract.Presenter {
 
     override fun addDataInRecycler(): ArrayList<Stores> {
 
-        var list: ArrayList<Stores> = ArrayList()
+        val list: ArrayList<Stores> = ArrayList()
 
         list.add(Stores(nameStore = "của hàng bà thu", imgStore = "https://i.imgur.com/ZcLLrkY.jpg"))
         list.add(Stores(nameStore = "cửa hàng bà chín", imgStore = "https://i.redd.it/obx4zydshg601.jpg"))
@@ -17,6 +17,5 @@ class StorePresenter: StoreContract.Presenter {
         list.add(Stores(nameStore = "cửa hàng bà tám", imgStore = "https://i.redd.it/tpsnoz5bzo501.jpg"))
 
         return list
-
     }
 }

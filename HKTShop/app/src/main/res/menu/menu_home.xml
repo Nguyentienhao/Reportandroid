@@ -17,34 +17,10 @@
         android:icon="@drawable/ic_shop_cart_24dp"
         />
     <item
-        android:id="@+id/itMenuOption"
+        android:id="@+id/itMessenger"
         android:title="@string/title_more"
-        android:icon="@drawable/ic_menu_vert_24"
+        android:icon="@drawable/ic_messenger_50"
         app:showAsAction="always"
         >
-
-        <menu>
-            <item
-                android:id="@+id/itSignIn"
-                android:icon="@drawable/ic_sign_in"
-                android:title="@string/title_sign_in"
-                />
-
-            <item
-                android:id="@+id/itPolicy"
-                android:title="@string/title_policy"
-                android:icon="@drawable/ic_policy_24dp"
-                />
-            <item
-                android:id="@+id/itHelp"
-                android:title="@string/title_help"
-                android:icon="@drawable/ic_help_24dp"
-                />
-            <item
-                android:id="@+id/itSignOut"
-                android:title="@string/title_sign_out"
-                android:icon="@drawable/ic_sign_out"
-                />
-        </menu>
     </item>
 </menu>

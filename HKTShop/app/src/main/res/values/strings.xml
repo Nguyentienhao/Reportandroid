@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HKTShop</string>
+    <string name="app_name"></string>
     <string name="button_search">Tìm kiếm sản phẩm</string>
     <string name="todo">TODO</string>
     <string name="image_capture">image capture</string>
@@ -24,13 +24,13 @@
     <string name="description_image_cart">Đây là hình ảnh giỏ hàng</string>
     <string name="description_cate">Danh mục các sản phẩm</string>
     <string name="hint_userName">Nhập Tài khoản</string>
-    <string name="hint_password">Nhập mật khẩu</string>
+    <string name="hint_password">Mật khẩu</string>
     <string name="text_forgot_password">Quên mât khẩu</string>
     <string name="button_sign_in">Đăng nhập</string>
     <string name="button_sign_in_facebook">Đăng nhập facebook</string>
     <string name="button_sign_in_google">Đăng nhập Google</string>
     <string name="tip_sign_up">Bạn cần điền đầy đủ thông tin</string>
-    <string name="name_sign_in">Nhập vào tên</string>
+    <string name="name_sign_in">Họ tên*</string>
     <string name="email_sign_in">Nhập vào email</string>
     <string name="confirm_password">Xác nhận mật khẩu</string>
     <string name="tip_enter_password">Mật khẩu phải bao gồm 6 ký tự và một chữ hoa</string>

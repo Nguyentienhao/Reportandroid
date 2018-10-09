@@ -8,42 +8,41 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.nguyentienhao.haokn.hktshop.R
-import com.nguyentienhao.haokn.hktshop.model.store.Stores
+import com.nguyentienhao.haokn.hktshop.model.categories.Categories
 import de.hdodenhof.circleimageview.CircleImageView
 
-
-class StoreRecycleViewAdapter(
-        private var context: Context,
-        private var storesList: ArrayList<Stores>?): RecyclerView.Adapter<StoreRecycleViewAdapter.ViewHolder>() {
+class CateRecycleViewAdapter(private var context: Context,
+                             private var cateList: ArrayList<Categories>?): RecyclerView.Adapter<CateRecycleViewAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int {
-        return storesList!!.size
+        return cateList!!.size
     }
 
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
-        val s: Stores = storesList!![p1]
+        val s: Categories = cateList!![p1]
 
-        p0.name?.text = s.nameStore
+        p0.name?.text = s.nameCate
 
         Glide.with(context)
                 .asBitmap()
-                .load(s.imgStore)
+                .load(s.imageCate)
                 .into(p0.image)
-
     }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
-        val v: View = LayoutInflater.from(p0.context).inflate(R.layout.custom_categories_stores, p0, false)
+        val v: View = LayoutInflater.from(p0.context).inflate(R.layout.custom_categories, p0, false)
+
         return ViewHolder(v)
     }
 
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var image: CircleImageView? = null
         var name: TextView? = null
 
         init {
-            image = itemView.findViewById(R.id.imgStore)
-            name  = itemView.findViewById(R.id.tvNameStore)
+            image = itemView.findViewById(R.id.imgCategories)
+            name = itemView.findViewById(R.id.tvNameCategories)
         }
     }
 }

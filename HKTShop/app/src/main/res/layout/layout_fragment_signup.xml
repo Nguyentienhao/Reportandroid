@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp"
         android:layout_margin="10dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tip_sign_up"
-            android:textStyle="bold"
-            />
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edtAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tài Khoản*"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_edtNameSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            >
+            android:layout_marginTop="20dp">
 
             <EditText
                 android:id="@+id/edtNameSignUp"
@@ -37,10 +42,9 @@
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_edtEmailSignUp"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:layout_marginTop="20dp">
 
             <EditText
                 android:id="@+id/edtEmailSignUp"
@@ -52,11 +56,9 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_edtPasswordSignUp"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:layout_marginTop="20dp">
 
             <com.nguyentienhao.haokn.hktshop.customView.PasswordEditText
                 android:id="@+id/edtPasswordSignUp"
@@ -68,37 +70,63 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/input_edtConfirmSignUp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            >
+            android:layout_height="wrap_content">
 
             <com.nguyentienhao.haokn.hktshop.customView.PasswordEditText
                 android:id="@+id/edtConfirmSignUp"
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:hint="@string/confirm_password"
                 android:inputType="textEmailAddress"
-                app:useStrike="true"
-                />
+                app:useStrike="true" />
         </android.support.design.widget.TextInputLayout>
 
-        <TextView
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/tip_enter_password" />
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ*"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính: " />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ" />
+        </RadioGroup>
+
         <Button
             android:id="@+id/btnSignUp"
-            android:textColor="#ffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
             android:layout_marginTop="20dp"
             android:background="@color/colorGoogle"
             android:text="@string/button_sign_up"
-            />
+            android:textAllCaps="false"
+            android:textColor="#ffff" />
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

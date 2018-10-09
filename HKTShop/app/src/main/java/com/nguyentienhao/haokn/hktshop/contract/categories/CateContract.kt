@@ -1,7 +1,8 @@
-package com.nguyentienhao.haokn.hktshop.contract.stores
+package com.nguyentienhao.haokn.hktshop.contract.categories
 
 import com.nguyentienhao.haokn.hktshop.BasePresenter
 import com.nguyentienhao.haokn.hktshop.BaseView
+import com.nguyentienhao.haokn.hktshop.model.categories.Categories
 import com.nguyentienhao.haokn.hktshop.model.store.Stores
 
 interface CateContract {
@@ -10,6 +11,6 @@ interface CateContract {
     }
 
     interface  Presenter: BasePresenter {
-        fun addDataInRecycler(listStores: ArrayList<Stores>)
+        fun addDataInRecycler(): ArrayList<Categories>
     }
 }

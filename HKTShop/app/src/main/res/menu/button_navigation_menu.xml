@@ -18,10 +18,10 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_favorites"
+        android:id="@+id/itNotification"
         android:enabled="true"
-        android:icon="@drawable/ic_camera_live_stream"
-        android:title="@string/title_live_stream"
+        android:icon="@drawable/ic_menu_notification"
+        android:title="Thông báo"
         app:showAsAction="ifRoom" />
 
 
